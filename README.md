@@ -184,6 +184,14 @@ The final 3D PCB implementation integrates all routing subsystems within a compa
 | My Library.pretty |  PCB footprints |
 
 ---
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
 
 # Contact
 
@@ -206,11 +214,6 @@ I am especially grateful to my professor, **Dr. Kurian Polachan**, for his valua
 Department of Electronics and Communication Engineering  
 International Institute of Information Technology Bangalore
 
----
-
-# License
-
-This project is intended for academic and educational purposes.
 
 
 
