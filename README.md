@@ -1,5 +1,4 @@
 # USB-C-Switcher
-# USB Type-C Multi-Port Switching Architecture
 
 A high-speed USB Type-C switching architecture designed for peripheral sharing and power-routing applications.  
 The system implements a 4-input to 1-output USB Type-C switching topology capable of routing:
@@ -57,41 +56,19 @@ within a compact two-layer PCB implementation.
 
 ---
 
-# Hardware Components
+# Root-Level Schematic
 
-| Component | Function |
-|---|---|
-| HD3SS3220 | USB Type-C orientation detection |
-| HD3SS6126 | USB 3.0 high-speed data multiplexing |
-| TPS2121 | VBUS power multiplexing |
-| TMUX1574 | CC signal routing |
-| TPS63001 | 3.3V DC-DC conversion |
-| A30403RNCQ | Rotary-switch based channel selection |
+![RootLevel](Images/root_level.png)
+
+The root-level schematic integrates the complete USB Type-C switching architecture including data routing, VBUS power routing, CC signal routing, and user-control circuitry.
 
 ---
 
-# PCB Features
+# User Control Block
 
-- 4 × USB Type-C input ports
-- 1 × USB Type-C output port
-- USB 3.0 SuperSpeed routing
-- Differential pair routing
-- Compact 80 mm × 80 mm PCB
-- Two-layer PCB implementation
-- ESD protection for data and VBUS lines
-- Modular switching architecture
+![RotarySwitch](Images/rotaryswitch.png)
 
----
-
-# PCB Implementation
-
-## 3D PCB View
-
-![PCB_3D](Images/3d.png)
-
-## PCB Routing Layout
-
-![PCB_Layout](Images/PCB%20layout.png)
+A rotary-switch based control mechanism generates SEL_A and SEL_B control signals for synchronized switching across all routing blocks.
 
 ---
 
@@ -119,17 +96,45 @@ The CC routing path is implemented using TMUX1574 analog multiplexers to maintai
 
 ---
 
-# User Control Block
+# PCB Routing Layout
 
-![RotarySwitch](Images/rotaryswitch.png)
+![PCB_Layout](Images/PCB%20layout.png)
 
-A rotary-switch based control mechanism generates SEL_A and SEL_B signals for synchronized switching across data, power, and CC routing blocks.
+The PCB layout was designed while maintaining differential-pair symmetry, compact routing, and signal-integrity constraints associated with USB 3.0 interfaces.
 
 ---
 
-# Root-Level Schematic
+# 3D PCB Implementation
 
-![RootLevel](Images/root_level.png)
+![PCB_3D](Images/3d.png)
+
+The final 3D PCB implementation integrates all routing subsystems within a compact two-layer PCB architecture.
+
+---
+
+# Hardware Components
+
+| Component | Function |
+|---|---|
+| HD3SS3220 | USB Type-C orientation detection |
+| HD3SS6126 | USB 3.0 high-speed data multiplexing |
+| TPS2121 | VBUS power multiplexing |
+| TMUX1574 | CC signal routing |
+| TPS63001 | 3.3V DC-DC conversion |
+| A30403RNCQ | Rotary-switch based channel selection |
+
+---
+
+# PCB Features
+
+- 4 × USB Type-C input ports
+- 1 × USB Type-C output port
+- USB 3.0 SuperSpeed routing
+- Differential pair routing
+- Compact 80 mm × 80 mm PCB
+- Two-layer PCB implementation
+- ESD protection for data and VBUS lines
+- Modular switching architecture
 
 ---
 
@@ -181,6 +186,22 @@ A rotary-switch based control mechanism generates SEL_A and SEL_B signals for sy
 
 ---
 
+# Contact
+
+Harsha Vardhan - [Venkata.HarshaVardhan@iiitb.ac.in](mailto:Venkata.HarshaVardhan@iiitb.ac.in)
+
+Project Link: https://github.com/
+
+---
+
+# Acknowledgments
+
+I would like to express my sincere gratitude to my college, **International Institute of Information Technology Bangalore (IIIT-B)**, for providing the resources and support required to complete this project.
+
+I am especially grateful to my professor, **Dr. Kurian Polachan**, for his valuable guidance, encouragement, and technical insights throughout the development of this work.
+
+---
+
 # Author
 
 **Harsha Vardhan**  
@@ -192,3 +213,6 @@ International Institute of Information Technology Bangalore
 # License
 
 This project is intended for academic and educational purposes.
+
+
+
