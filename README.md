@@ -130,7 +130,6 @@ The final 3D PCB implementation integrates all routing subsystems within a compa
 - 4 × USB Type-C input ports
 - 1 × USB Type-C output port
 - USB 3.0 SuperSpeed routing
-- Differential pair routing
 - Compact 80 mm × 80 mm PCB
 - Two-layer PCB implementation
 - ESD protection for data and VBUS lines
