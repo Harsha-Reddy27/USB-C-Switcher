@@ -170,7 +170,6 @@ The final 3D PCB implementation integrates all routing subsystems within a compa
 # Software and Tools Used
 
 - KiCad 9.0
-- LTspice
 - Overleaf (IEEE paper preparation)
 
 ---
@@ -190,7 +189,6 @@ The final 3D PCB implementation integrates all routing subsystems within a compa
 
 Harsha Vardhan - [Venkata.HarshaVardhan@iiitb.ac.in](mailto:Venkata.HarshaVardhan@iiitb.ac.in)
 
-Project Link: https://github.com/
 
 ---
 
