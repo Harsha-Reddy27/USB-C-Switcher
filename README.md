@@ -208,11 +208,6 @@ I am especially grateful to my professor, **Dr. Kurian Polachan**, for his valua
 
 ---
 
-# Author
-
-**Harsha Vardhan**  
-Department of Electronics and Communication Engineering  
-International Institute of Information Technology Bangalore
 
 
 
