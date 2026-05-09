@@ -181,7 +181,7 @@ The final 3D PCB implementation integrates all routing subsystems within a compa
 | Hardware | KiCad project files |
 | Images | Architecture and PCB images |
 | Paper | IEEE conference-style paper |
-| My Library.pretty | Custom PCB footprints |
+| My Library.pretty |  PCB footprints |
 
 ---
 
